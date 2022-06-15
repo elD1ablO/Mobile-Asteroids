@@ -14,11 +14,7 @@ public class PlayerHealth : MonoBehaviour
     public void Crash()
     {
         SoundManager audioManager = FindObjectOfType<SoundManager>();
-        audioManager.GetComponent<AudioSource>().PlayOneShot(audioManager.GetComponent<SoundManager>().crash);
-
-        destroyNova.SetActive(true);
-        ParticleSystem particles = destroyNova.GetComponent<ParticleSystem>();
-        particles.Play();
+        audioManager.GetComponent<AudioSource>().PlayOneShot(audioManager.GetComponent<SoundManager>().crash);              
 
         inGameMenu.EndGame();
         gameObject.SetActive(false);
