@@ -41,6 +41,7 @@ public class InGameMenu : MonoBehaviour
 
         player.transform.position = Vector3.zero;
         player.SetActive(true);
+        player.GetComponent<Rigidbody>().velocity = Vector3.zero;
 
         continueButton.interactable = false;
         gameOverCanvas.gameObject.SetActive(false);

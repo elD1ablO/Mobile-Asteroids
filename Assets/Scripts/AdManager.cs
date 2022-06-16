@@ -12,7 +12,7 @@ public class AdManager : MonoBehaviour, IUnityAdsShowListener, IUnityAdsLoadList
 
     [SerializeField] string _androidGameId;
     [SerializeField] string _iOSGameId;
-    [SerializeField] bool _testMode = true;
+    [SerializeField] bool _testMode = false;
     private string _gameId;
 
     string _adUnitId = null;
@@ -74,7 +74,7 @@ public class AdManager : MonoBehaviour, IUnityAdsShowListener, IUnityAdsLoadList
         // Disable the button:
         //_showAdButton.interactable = false;
         // Then show the ad:
-        Advertisement.Show(_adUnitId, this);
+        Advertisement.Show(_adUnitId, this);        
     }
 
     public void OnUnityAdsShowComplete(string adUnitId, UnityAdsShowCompletionState showCompletionState)
@@ -86,7 +86,7 @@ public class AdManager : MonoBehaviour, IUnityAdsShowListener, IUnityAdsLoadList
 
             // Load another ad:
             Advertisement.Load(_adUnitId, this);
-        }
+        }        
     }
     // Implement Load and Show Listener error callbacks:
     public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)

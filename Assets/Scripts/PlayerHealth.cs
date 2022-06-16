@@ -16,6 +16,8 @@ public class PlayerHealth : MonoBehaviour
         SoundManager audioManager = FindObjectOfType<SoundManager>();
         audioManager.GetComponent<AudioSource>().PlayOneShot(audioManager.GetComponent<SoundManager>().crash);              
 
+        Instantiate(destroyNova, transform.position, Quaternion.identity);
+
         inGameMenu.EndGame();
         gameObject.SetActive(false);
     }

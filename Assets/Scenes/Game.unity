@@ -5911,6 +5911,11 @@ PrefabInstance:
       propertyPath: inGameMenu
       value: 
       objectReference: {fileID: 2475264707047923540}
+    - target: {fileID: 2062881713701847644, guid: c809e120eb0f6ca4cafe1d0c30be223d,
+        type: 3}
+      propertyPath: destroyNova
+      value: 
+      objectReference: {fileID: 147082, guid: 3cb6f59ccdbfe3a47967d05314e72d78, type: 3}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: c809e120eb0f6ca4cafe1d0c30be223d, type: 3}

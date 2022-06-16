@@ -283,6 +283,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b06b3a6cc896554d8b03d7d566b7164, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  continueButton: {fileID: 0}
   gameOverText: {fileID: 0}
   scoreSystem: {fileID: 0}
   gameOverCanvas: {fileID: 2475264705490651564}

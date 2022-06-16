@@ -4833,6 +4833,7 @@ GameObject:
   - component: {fileID: 410428}
   - component: {fileID: 19865126}
   - component: {fileID: 19938104}
+  - component: {fileID: 3412760670897331594}
   m_Layer: 0
   m_Name: BlueUltimateNova
   m_TagString: Untagged
@@ -9550,6 +9551,18 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &3412760670897331594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7bbb3eb79feef04cbef7dda4ac36ab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &159306
 GameObject:
   m_ObjectHideFlags: 0
