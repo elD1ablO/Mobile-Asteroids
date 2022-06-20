@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6731588682252887729}
   - component: {fileID: 4817809921980792151}
   - component: {fileID: 2878526939566885372}
+  - component: {fileID: 448148352566851481}
   m_Layer: 0
   m_Name: YellowAsteroid
   m_TagString: Untagged
@@ -128,3 +129,27 @@ CapsuleCollider:
   m_Height: 30.107689
   m_Direction: 1
   m_Center: {x: -0.2700001, y: -3.003788, z: -0.18854141}
+--- !u!205 &448148352566851481
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7952241807161528972}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1

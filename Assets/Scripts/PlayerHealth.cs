@@ -14,8 +14,9 @@ public class PlayerHealth : MonoBehaviour
     public void Crash()
     {
         SoundManager audioManager = FindObjectOfType<SoundManager>();
-        audioManager.GetComponent<AudioSource>().PlayOneShot(audioManager.GetComponent<SoundManager>().crash);              
+        audioManager.GetComponent<AudioSource>().PlayOneShot(audioManager.GetComponent<SoundManager>().crash);
 
+        Handheld.Vibrate();
         Instantiate(destroyNova, transform.position, Quaternion.identity);
 
         inGameMenu.EndGame();

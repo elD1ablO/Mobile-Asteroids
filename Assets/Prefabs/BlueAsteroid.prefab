@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2726979523307310910}
   - component: {fileID: 5720411197138793850}
   - component: {fileID: 1224213632864226103}
+  - component: {fileID: -6231155068307193192}
   m_Layer: 0
   m_Name: BlueAsteroid
   m_TagString: Untagged
@@ -127,3 +128,27 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 3.638143
   m_Center: {x: -0.00000059604645, y: 0, z: -0.00000059604645}
+--- !u!205 &-6231155068307193192
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5588252047617559336}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1

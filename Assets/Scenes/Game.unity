@@ -907,7 +907,7 @@ MonoBehaviour:
   - {fileID: 5588252047617559336, guid: 6fef7bae5b45e68498d1eac594027571, type: 3}
   - {fileID: 5021635548109907716, guid: adb7ff2195edb0b43b38fd214afe50f6, type: 3}
   - {fileID: 7952241807161528972, guid: f6d1e57aef92a2f4b905a96a60b06c72, type: 3}
-  secondsBetweenAsteroids: 2
+  secondsBetweenAsteroids: 1.2
   forceRange: {x: 2, y: 6}
 --- !u!4 &1764632130
 Transform:
