@@ -4,12 +4,16 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 public class InGameMenu : MonoBehaviour
 {
-    [SerializeField] GameObject player;
-    [SerializeField] Button continueButton;
+    [SerializeField]AssetReference scene;
 
+    [SerializeField] GameObject player;    
+
+    [SerializeField] Button continueButton;
     [SerializeField] TMP_Text gameOverText;
     [SerializeField] ScoreSystem scoreSystem;
     [SerializeField] GameObject gameOverCanvas;
@@ -33,6 +37,7 @@ public class InGameMenu : MonoBehaviour
     public void ToMain()
     {
         SceneManager.LoadScene(0);
+        scene.LoadSceneAsync().Completed += SceneLoadComplete;
     }
 
     public void ContinueButton()
@@ -48,11 +53,21 @@ public class InGameMenu : MonoBehaviour
 
         scoreSystem.StartTimer();
 
-        asteroidSpawner.enabled = true;
-
+        asteroidSpawner.enabled = true;   
         
-
-        
+    }
+    void SceneLoadComplete(AsyncOperationHandle<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> obj)
+    {
+        if (obj.Status == AsyncOperationStatus.Succeeded)
+        {
+            // Set our reference to the AsyncOperationHandle (see next section) Debug.Log(obj.Result.Scene.name + " successfully loaded."); // (optional) do more stuff } }
+            Debug.Log(obj.Result.Scene.name + " successfully loaded.");
+            // (optional) do more stuff
+        }
+    }
+    private void OnDestroy()
+    {
+        scene.ReleaseAsset();
     }
 
 }

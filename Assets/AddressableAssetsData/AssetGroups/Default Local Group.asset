@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 260bfb38026b8c94580de4a851135952
+  m_SerializeEntries:
+  - m_GUID: 401a0037971fe9249bf1a7b19de0148f
+    m_Address: Assets/Scenes/Menu.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Menu
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 99c9720ab356a0642a771bea13969a05
+    m_Address: Assets/Scenes/Game.unity
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Game
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6fef7bae5b45e68498d1eac594027571
+    m_Address: Assets/Prefabs/BlueAsteroid.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3cb6f59ccdbfe3a47967d05314e72d78
+    m_Address: Assets/Prefabs/BlueUltimateNova.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c809e120eb0f6ca4cafe1d0c30be223d
+    m_Address: Assets/Prefabs/Player.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: adb7ff2195edb0b43b38fd214afe50f6
+    m_Address: Assets/Prefabs/RedAsteroid.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f6d1e57aef92a2f4b905a96a60b06c72
+    m_Address: Assets/Prefabs/YellowAsteroid.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 83bf344aa66f8704ab56cddca307d1cd
+    m_Address: Assets/PolygonSciFiSpace/Materials/FX_Materials/FX_SphereGlow.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4cee7a5983b187943adc589b9cb1f084
+    m_Address: Assets/PolygonSciFiSpace/Materials/PolygonScifiSpace_Material_01_A.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: ccabe2f6d0ff0b34ea4c6ad84a5748de
+    m_Address: Assets/PolygonSciFiSpace/Materials/FX_Materials/FX_Lines.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: e09805caf7b9f494681c9218e7ea1722
+    m_Address: Assets/PolygonSciFiSpace/Materials/FX_Materials/FX_Clouds.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 65413502512302a41867b94b727db35f, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 17096b4f3c610ae4b9d1a0319301c290, type: 2}
+    - {fileID: 11400000, guid: a45328b502e453745890144a2d38de79, type: 2}

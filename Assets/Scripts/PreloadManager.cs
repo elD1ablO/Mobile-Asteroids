@@ -1,36 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 
-public class MainMenu : MonoBehaviour
+public class PreloadManager : MonoBehaviour
 {
-    [SerializeField] AssetReference scene;
+    // Assign in Editor
+    public AssetReference scene;
 
-    [SerializeField] TMP_Text highScoreText;
+    // Start the load operation on start
     void Start()
     {
-        int highScore = PlayerPrefs.GetInt(ScoreSystem.highScoreKey, 0);
-
-        highScoreText.text = $"High Score: {highScore}";
-
-        
-    }
-    public void StartGame()
-    {
-        //SceneManager.LoadScene(2);
         scene.LoadSceneAsync().Completed += SceneLoadComplete;
     }
 
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
+    // Instantiate the loaded prefab on complete
 
-    void SceneLoadComplete(AsyncOperationHandle<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> obj)
+    private void SceneLoadComplete(AsyncOperationHandle<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> obj)
     {
         if (obj.Status == AsyncOperationStatus.Succeeded)
         {
@@ -40,7 +26,6 @@ public class MainMenu : MonoBehaviour
         }
     }
 
-    // Release asset when parent object is destroyed
     private void OnDestroy()
     {
         scene.ReleaseAsset();
