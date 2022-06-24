@@ -21,28 +21,13 @@ public class MainMenu : MonoBehaviour
     }
     public void StartGame()
     {
-        //SceneManager.LoadScene(2);
-        scene.LoadSceneAsync().Completed += SceneLoadComplete;
+        SceneManager.LoadScene(1);
+        
     }
 
     public void QuitGame()
     {
         Application.Quit();
     }
-
-    void SceneLoadComplete(AsyncOperationHandle<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> obj)
-    {
-        if (obj.Status == AsyncOperationStatus.Succeeded)
-        {
-            // Set our reference to the AsyncOperationHandle (see next section) Debug.Log(obj.Result.Scene.name + " successfully loaded."); // (optional) do more stuff } }
-            Debug.Log(obj.Result.Scene.name + " successfully loaded.");
-            // (optional) do more stuff
-        }
-    }
-
-    // Release asset when parent object is destroyed
-    private void OnDestroy()
-    {
-        scene.ReleaseAsset();
-    }
+           
 }

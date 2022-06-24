@@ -17,18 +17,6 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 260bfb38026b8c94580de4a851135952
   m_SerializeEntries:
-  - m_GUID: 401a0037971fe9249bf1a7b19de0148f
-    m_Address: Assets/Scenes/Menu.unity
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Menu
-    FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 99c9720ab356a0642a771bea13969a05
-    m_Address: Assets/Scenes/Game.unity
-    m_ReadOnly: 0
-    m_SerializedLabels:
-    - Game
-    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 6fef7bae5b45e68498d1eac594027571
     m_Address: Assets/Prefabs/BlueAsteroid.prefab
     m_ReadOnly: 0

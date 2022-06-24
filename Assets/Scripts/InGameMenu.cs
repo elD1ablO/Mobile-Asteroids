@@ -24,8 +24,8 @@ public class InGameMenu : MonoBehaviour
         asteroidSpawner.enabled = false;
 
         int finalScore = scoreSystem.StopScoreCount();
-        gameOverText.text = $"Your score: {finalScore}";
 
+        gameOverText.text = $"Your score: {finalScore}";
         gameOverCanvas.gameObject.SetActive(true);
     }
 
@@ -36,8 +36,7 @@ public class InGameMenu : MonoBehaviour
 
     public void ToMain()
     {
-        SceneManager.LoadScene(0);
-        scene.LoadSceneAsync().Completed += SceneLoadComplete;
+        SceneManager.LoadScene(0);        
     }
 
     public void ContinueButton()
@@ -56,18 +55,5 @@ public class InGameMenu : MonoBehaviour
         asteroidSpawner.enabled = true;   
         
     }
-    void SceneLoadComplete(AsyncOperationHandle<UnityEngine.ResourceManagement.ResourceProviders.SceneInstance> obj)
-    {
-        if (obj.Status == AsyncOperationStatus.Succeeded)
-        {
-            // Set our reference to the AsyncOperationHandle (see next section) Debug.Log(obj.Result.Scene.name + " successfully loaded."); // (optional) do more stuff } }
-            Debug.Log(obj.Result.Scene.name + " successfully loaded.");
-            // (optional) do more stuff
-        }
-    }
-    private void OnDestroy()
-    {
-        scene.ReleaseAsset();
-    }
-
+    
 }
